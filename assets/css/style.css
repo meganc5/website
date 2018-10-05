@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+body {
+    background-color: whitesmoke;
+    font-family: roboto;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+a.navbuttons {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: roboto;
+  text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dimgray;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: roboto;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+h1 {
+    color: #006633;
+    font-family: Courgette;
+    font-size: 600%;
+    img{
+    width:800%;
+  }
+}
+
+h2{
+  font-family: roboto;
+}
+
+h3{
+font-family: roboto;
+}
+
+h4{
+font-family: roboto;
+}
+
+
+
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: #97A49F;
+  font-family: roboto
+  color: black;
+}
+
+.footer {
+  background: #97A49F;
+  color: black;
+}
+
+.main {
+  text-align: left;
+  background: #97A49F;
+  color: black;
+}
+
+.aside-1 {
+  background: #97A49F;
+  color: black;
+}
+
+.aside-2 {
+  background: #97A49F;
+  color: black;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em;
+
+.container {
+height: 90vh;
+margin: 2rem;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+}
